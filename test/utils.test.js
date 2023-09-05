@@ -5,9 +5,7 @@ import { isTruthyValue } from "../utils/utils.js";
 
 describe("Test Utility functions", function () {
   it("validates an input string", function () {
-    expect(
-      ["yaw", "diabene Yaw", "func"].every((value) => validInput(value))
-    ).to.equal(true);
+    expect(["yaw", "diabene Yaw", "func"].every((value) => validInput(value))).to.equal(true);
   });
 });
 
