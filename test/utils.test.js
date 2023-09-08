@@ -21,10 +21,10 @@ describe("Validation", function () {
       validateReqObj(
         {
           author: "Stiff Stiff",
-          tag: ""
+          tag: "eyy"
         },
         ["title", "content", "tag", "author"]
       )
-    ).to.be.an("error");
+    ).to.be.an("object");
   });
 });

@@ -1,5 +1,6 @@
 import express from "express";
-import { getPosts, validatePostRequestBody, BlogController } from "../controllers/PostController.js";
+import { BlogController } from "../controllers/PostController.js";
+import { getPosts, validatePostRequestBody } from "../middleware/index.js";
 
 const { getAllPosts, getPostById, createNewPost, updatePost, deletePost } = BlogController;
 

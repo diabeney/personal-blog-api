@@ -32,7 +32,7 @@ const STATUS = {
 
 const isTruthyValue = (value) => (value ? "truthy" : "falsy");
 
-export const validateReqObj = (obj, fields) => {
+const validateReqObj = (obj, fields) => {
   const objFields = Object.keys(obj);
   const isNotValid = objFields.some((field) => fields.indexOf(field) < 0 || !validInput(obj[field]));
   if (isNotValid) {
@@ -41,4 +41,4 @@ export const validateReqObj = (obj, fields) => {
   return obj;
 };
 
-export { validInput, isTruthyValue, STATUS };
+export { validInput, isTruthyValue, STATUS, validateReqObj };
