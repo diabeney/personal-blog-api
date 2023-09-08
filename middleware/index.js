@@ -1,5 +1,6 @@
 import { validateReqObj } from "../utils/utils.js";
 import { Post } from "../models/post.js";
+import { STATUS } from "../utils/utils.js";
 
 async function getPosts(_, res, next) {
   try {
