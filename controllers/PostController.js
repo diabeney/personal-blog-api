@@ -3,13 +3,13 @@ import { validInput, STATUS } from "../utils/utils.js";
 
 const BlogController = {
   createNewPost: async (req, res) => {
-    const { title, content, author, tag } = req.body;
-    const isValid = [title, content, author, tag].every((item) => validInput(item));
+    const { title, slug, author, tag } = req.body;
+    const isValid = [title, slug, author, tag].every((item) => validInput(item));
     if (isValid) {
       try {
         const newPost = new Post({
           title: title,
-          content: content,
+          slug: slug,
           author: author,
           tag: tag
         });

@@ -1,11 +1,15 @@
 import { describe, it } from "mocha";
 import { expect } from "chai";
 import { validInput } from "../utils/utils.js";
-import { isTruthyValue, validateReqObj } from "../utils/utils.js";
+import { isTruthyValue, validateReqObj, read } from "../utils/utils.js";
 
 describe("Test Utility functions", function () {
   it("validates an input string", function () {
     expect(["yaw", "diabene Yaw", "func"].every((value) => validInput(value))).to.equal(true);
+  });
+
+  it("reads some filePaths", function () {
+    expect(read("/public/blog")).to.equal("/public/blog");
   });
 });
 
