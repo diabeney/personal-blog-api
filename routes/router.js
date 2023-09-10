@@ -8,11 +8,11 @@ const { getMarkdown } = MarkdownController;
 
 const router = express.Router();
 
-// router.get("/posts", getPosts, getAllPosts);
+router.get("/posts", getPosts, getAllPosts);
 // router.get("/posts/:id", getPosts, getPostById);
-// router.post("/posts", createNewPost);
+router.post("/posts", createNewPost);
 // router.patch("/posts/:id", validatePostRequestBody, updatePost);
 // router.delete("/posts/:id", getPosts, deletePost);
-router.get("/post/:slug", getStaticFilePath, getMarkdown);
+router.get("/posts/:slug", getStaticFilePath, getMarkdown);
 
 export default router;
