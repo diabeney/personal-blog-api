@@ -1,12 +1,5 @@
 # Aspen Series
 
----
-
-title: "I did it again. I had to."
-description: "Rebuilding my homepage for the 1000th time"
-
----
-
 <section>
 Every developer/designer has been here a number of times. Some more than others. Me, surely more than everyone 😅. Where is this? Creating another portfolio site. This place is too stressful.
 

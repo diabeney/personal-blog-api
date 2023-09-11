@@ -1,6 +1,5 @@
 import { remark } from "remark";
 import { readFileSync } from "fs";
-import matter from "gray-matter";
 
 export const MarkdownController = {
   getMarkdown: async (req, res) => {

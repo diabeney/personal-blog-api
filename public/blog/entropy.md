@@ -1,18 +1,27 @@
-# Introduction
+<section>
+Have you ever wondered why your hot food eventually becomes cold 😅? why water transforms into vapour at 100 degrees Celsius with such ease at atmospheric pressure? or why certain conditions seem to trigger chemical reactions?
 
-Have you ever wondered why our knives need to be so sharp or why the nails we use the end with a sharp point? The answers to all these questions lie in the concept of pressure. It is the **ratio** of the **force** applied to the **surface area** over which the force is applied.
+In this blog post, we embark on an interesting journey to understand the fundamental principles underlying these phenomena. While I'll touch on some technical terms, my aim is to make these concepts accessible to everyone by minimizing the use of mathematical equations. Remember this is a deep dive, so it's going to be lengthy.
 
-# Files
+</section>
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+<section className = 'motivational'>
+    ## What's the problem?
 
-## Export a file
+The First Law of Thermodynamics, while valuable for understanding energy conservation, doesn't address the practical constraints of energy conversions—whether it's **physically achievable** to convert energy from one form to another under specific conditions.
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+Designers do not have infinite freedom to specify operating conditions. There exists a theoretical maximum or minimum limit on energy transfer in any process, given certain conditions. The Second Law of Thermodynamics and the concept of entropy help determine these 'maximum' or 'minimum' values.
 
-## Synchronize a file
+</section>
+
+## Entropy
 
 Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
+
+<div className = 'info'  >
+Entropy can be defined in different ways. For now we are going to stick to the definition in terms of 'lost' work.
+</div>
+## Synchronize a file
 
 If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
 

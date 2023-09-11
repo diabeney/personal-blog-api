@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-ConnectDB(process.env.MONGO_URI);
+// ConnectDB(process.env.MONGO_URI);
+ConnectDB("mongodb://127.0.0.1:27017");
 
 app.listen(PORT, () => {
   console.log(`Server connected on port: ${PORT}`);
