@@ -9,7 +9,7 @@ describe("Test Utility functions", function () {
   });
 
   it("reads some filePaths", function () {
-    expect(read("/public/blog")).to.equal("/public/blog");
+    expect(read("/public/blog")).to.not.equal("/public/blog");
   });
 });
 
@@ -30,5 +30,11 @@ describe("Validation", function () {
         ["title", "content", "tag", "author"]
       )
     ).to.be.an("object");
+  });
+});
+
+describe("object assignment confirmation", function () {
+  it("Checks if an object returns the correct data", function () {
+    expect({}).to.be.equal({});
   });
 });

@@ -1,18 +1,24 @@
 import express from "express";
 import { BlogController } from "../controllers/PostController.js";
-import { getPosts, validatePostRequestBody, getStaticFilePath } from "../middleware/index.js";
+import { getPosts, getStaticFilePath, getUser } from "../middleware/index.js";
 import { MarkdownController } from "../controllers/Markdown.js";
+import { UserController } from "../controllers/UserController.js";
+import { validateUserRequestBody } from "../middleware/index.js";
 
-const { getAllPosts, getPostById, createNewPost, updatePost, deletePost } = BlogController;
+const { getAllPosts, createNewPost } = BlogController;
 const { getMarkdown } = MarkdownController;
+const { registerUser, loginUser } = UserController;
 
 const router = express.Router();
 
 router.get("/posts", getPosts, getAllPosts);
-// router.get("/posts/:id", getPosts, getPostById);
 router.post("/posts", createNewPost);
+router.get("/posts/:slug", getStaticFilePath, getMarkdown);
+router.post("/register", validateUserRequestBody, registerUser);
+router.post("/login", validateUserRequestBody, getUser, loginUser);
+
+// router.get("/posts/:id", getPosts, getPostById);
 // router.patch("/posts/:id", validatePostRequestBody, updatePost);
 // router.delete("/posts/:id", getPosts, deletePost);
-router.get("/posts/:slug", getStaticFilePath, getMarkdown);
 
 export default router;

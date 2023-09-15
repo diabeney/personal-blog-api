@@ -1,7 +1,7 @@
 # Aspen Series
 
 <section>
-Every developer/designer has been here a number of times. Some more than others. Me, surely more than everyone 😅. Where is this? Creating another portfolio site. This place is too stressful.
+Every developer/designer has been here a number of times. Some more than others. Me, surely more than everyone . Where is this? Creating another portfolio site. This place is too stressful.
 
 Coming up with a site format that display many aspect of your career and personality is very daunting. Sometimes you start out very ambitious (after being inspired by others); animation + colors + responsiveness coolness. Sometimes, dammit, you want it simple. One column, not too many colors. Fast! And label it as "Web Standards Compliant".
 

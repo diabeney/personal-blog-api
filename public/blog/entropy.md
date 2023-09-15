@@ -5,31 +5,28 @@ In this blog post, we embark on an interesting journey to understand the fundame
 
 </section>
 
-<section className = 'motivational'>
+<section className = 'info'>
     ## What's the problem?
 
-The First Law of Thermodynamics, while valuable for understanding energy conservation, doesn't address the practical constraints of energy conversions—whether it's **physically achievable** to convert energy from one form to another under specific conditions.
+The First Law of Thermodynamics, while valuable for understanding energy conservation, doesn't address the practical constraints of energy conversions—whether it's **physically possible** to convert energy from one form to another under specific conditions.
 
-Designers do not have infinite freedom to specify operating conditions. There exists a theoretical maximum or minimum limit on energy transfer in any process, given certain conditions. The Second Law of Thermodynamics and the concept of entropy help determine these 'maximum' or 'minimum' values.
+In order to understand the practical meaning of entropy, we need to define 'work'.
 
 </section>
 
-## Entropy
+## Work
 
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
+The concept of work is frequently used in the fields of Science and Engineering, but what precisely does it entail? To put it simply, work is determined by multiplying the distance a body travels by the force that acts against its motion. In essence, when moving a body from point A to point B, energy is expended to overcome any opposing forces. If there are no opposing forces, no work is performed.
 
-<div className = 'info'  >
-Entropy can be defined in different ways. For now we are going to stick to the definition in terms of 'lost' work.
+When we focus solely on the energy within the body, we can deduce that energy is consistently transferred from one point to another in the form of work. However, for an object to move from one place to another, there must be a force driving it. There are various driving forces, but when the driving force is a temperature gradient or difference, we refer to the work done as **heat.**
+
+<div className = 'info' >
+Up to this point, I've employed the term 'point' to represent a location. We can view these points as representing a system and its surroundings. Energy can be transferred from a system (point A) to its surroundings (point B) or in the opposite direction.
 </div>
-## Synchronize a file
 
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
+# Entropy
 
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
+Theoretically, there is a maximum amount of work that can be done in every process. This maximum can be achieved if the process is done on a reversible path. A process is said to be reversible if
 
 # Markdown extensions
 
