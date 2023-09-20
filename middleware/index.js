@@ -2,7 +2,7 @@ import { validateReqObj } from "../utils/utils.js";
 import { Post } from "../models/post.js";
 import { User } from "../models/User.js";
 import { STATUS } from "../utils/utils.js";
-import { join, resolve } from "path";
+import { join } from "path";
 import { readdirSync } from "fs";
 
 async function getPosts(_, res, next) {
@@ -54,7 +54,7 @@ function validateUserRequestBody(req, res, next) {
 
 function getStaticFilePath(req, res, next) {
   const { slug } = req.params;
-  const markdownDir = resolve(join("./", "/public/blog"));
+  const markdownDir = join(process.cwd(), "/public/blog");
   let match;
   try {
     const files = readdirSync(markdownDir);

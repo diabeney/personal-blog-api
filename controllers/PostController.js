@@ -52,20 +52,17 @@ const BlogController = {
       res.status(404).json(STATUS.NOT_FOUND);
     }
   },
-  getPostById: async (req, res) => {
-    const { id } = req.params;
-    const posts = res.posts;
-    const actualPost = posts.find((item) => item.id === id);
-    if (actualPost) {
-      try {
-        const result = await Post.findOne(actualPost);
-        res.status(201).json(result);
-      } catch (err) {
-        res.status(500).json(STATUS.SERVER_ERROR);
-      }
-    } else {
+  getPostById: async (req, res, next) => {
+    const { slug } = req.params;
+    const actualPost = await Post.findOne({ slug });
+
+    if (!actualPost) {
       res.status(404).json(STATUS.NOT_FOUND);
+      return;
     }
+
+    res.foundPost = actualPost;
+    next();
   }
 };
 

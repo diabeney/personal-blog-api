@@ -26,9 +26,22 @@ Up to this point, I've employed the term 'point' to represent a location. We can
 
 # Entropy
 
-Theoretically, there is a maximum amount of work that can be done in every process. This maximum can be achieved if the process is done on a reversible path. A process is said to be reversible if
+Theoretically, there is a limit of how much work that can be obtained in every process. This maximum (or minimum) can only be achieved **if** the process is done on a reversible path. In simple terms, a process is said to be reversible if it can be returned to its original state with no **NET** addition of work or heat. However almost every process in our real world is executed on an **irreversible** pathway ( -why?🤔, pause for a moment and think about it.). Consequently, we do not obtain the theoretical maximum (or minimum) work in real world processes.
 
-# Markdown extensions
+This brings us to another intuitive question, "what happens to the remaining work?". That is, as an example, if we know that the maximum achievable amount of work for a given process is 10 joules - i.e on a reversible path - but the actual work obtained is 6 joules, what happens to the remaining 4 joules? Remember energy cannot be created nor **destroyed**. So we know for a fact that it's not destroyed but where is it? Entropy is a property that allows us to quantify this 'lost work'. To account for its destination, we need to define the Second Law of Thermodynamics.
+
+<div className = 'warning' >
+##Pitfall
+
+The work can be minimum or maximum depending on the type of process. If the process **requires** work, then the theoretical limit is actually the **minimum** work needed. However, if the process **produces** work, then the theoretical limit is the **maximum** achievable work. In both cases, the work is achieved on a reversible path.
+
+</div>
+
+# The Second Law of Thermodynamics
+
+It states that the entropy of the universe cannot decrease. The entropy of the universe is unchanged by any reversible process and increased by any irreversible process.
+
+At this point this should make sense, since we've already
 
 # Markdown extensions
 
