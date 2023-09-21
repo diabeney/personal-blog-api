@@ -18,22 +18,22 @@ In order to understand the practical meaning of entropy, we need to define 'work
 
 The concept of work is frequently used in the fields of Science and Engineering, but what precisely does it entail? To put it simply, work is determined by multiplying the distance a body travels by the force that acts against its motion. In essence, when moving a body from point A to point B, energy is expended to overcome any opposing forces. If there are no opposing forces, no work is performed.
 
-When we focus solely on the energy within the body, we can deduce that energy is consistently transferred from one point to another in the form of work. However, for an object to move from one place to another, there must be a force driving it. There are various driving forces, but when the driving force is a temperature gradient or difference, we refer to the work done as **heat.**
+When we focus solely on the energy within the body, we can deduce that energy is consistently transferred from one point to another in the form of work. However, for an object to move from one place to another, there must be a force driving it. There are various driving forces, but when the driving force is a temperature gradient or difference, we refer to this _special_ work done as **heat.**
 
-<div className = 'info' >
+<section className = 'info' >
 Up to this point, I've employed the term 'point' to represent a location. We can view these points as representing a system and its surroundings. Energy can be transferred from a system (point A) to its surroundings (point B) or in the opposite direction.
-</div>
+</section>
 
 # Entropy
 
-Theoretically, there is a limit of how much work that can be obtained in every process. This maximum (or minimum) can only be achieved **if** the process is done on a reversible path. In simple terms, a process is said to be reversible if it can be returned to its original state with no **NET** addition of work or heat. However almost every process in our real world is executed on an **irreversible** pathway ( -why?🤔, pause for a moment and think about it.). Consequently, we do not obtain the theoretical maximum (or minimum) work in real world processes.
+Theoretically, there exists a limit to the amount of work achievable in any process . This maximum (or minimum) can only be reached when the process follows a [reversible path](<https://en.wikipedia.org/wiki/Reversible_process_(thermodynamics)>). To put it simply, a process is considered reversible if it can be returned to its initial state without a **net** addition of work or heat. However, almost every real-world process operates on an irreversible path. As a result, we don't attain the theoretical maximum (or minimum) of work in practical processes.
 
-This brings us to another intuitive question, "what happens to the remaining work?". That is, as an example, if we know that the maximum achievable amount of work for a given process is 10 joules - i.e on a reversible path - but the actual work obtained is 6 joules, what happens to the remaining 4 joules? Remember energy cannot be created nor **destroyed**. So we know for a fact that it's not destroyed but where is it? Entropy is a property that allows us to quantify this 'lost work'. To account for its destination, we need to define the Second Law of Thermodynamics.
+This leads us to another intriguing question: "What happens to the unobtained work?" For instance, if we determine that the maximum achievable work for a particular process is 10 joules (on a reversible path), but we only obtain 6 joules _(because we're doing it on an irreversible path)_, what happens to the remaining 4 joules? It's important to remember that energy cannot be created or destroyed. So, we know it isn't destroyed, but where does it go? Entropy is the property that enables us to quantify this _'lost work'_. Entropy represents the portion of a system's energy that cannot be converted into useful work.
 
-<div className = 'warning' >
-##Pitfall
+<div className = 'info' >
+##Good to know.
 
-The work can be minimum or maximum depending on the type of process. If the process **requires** work, then the theoretical limit is actually the **minimum** work needed. However, if the process **produces** work, then the theoretical limit is the **maximum** achievable work. In both cases, the work is achieved on a reversible path.
+The achievable work can either be the minimum or maximum, depending on the nature of the process. If the process requires work, the theoretical limit represents the minimum work required. Conversely, if the process generates work, the theoretical limit represents the maximum achievable work. In both scenarios, this work is attained through a reversible path. We can also refer to it as _potential work_.
 
 </div>
 
@@ -41,10 +41,21 @@ The work can be minimum or maximum depending on the type of process. If the proc
 
 It states that the entropy of the universe cannot decrease. The entropy of the universe is unchanged by any reversible process and increased by any irreversible process.
 
-At this point this should make sense, since we've already
+We can make the following deductions from the second law of Thermodynamics.
 
-# Markdown extensions
+1. In a reversible process, no work is lost, and the total entropy of the universe remains the same.
+1. Reversible processes are the most efficient processes possible, and they produce the maximum amount of work or require the minimum amount of work for a given initial and final state.
+1. The entropy of the universe can never decrease; it can only stay the same or increase. This means that some work is always lost in real-world processes, because real-world processes are never perfectly reversible.
+1. The more irreversible a process is, the more entropy is produced, and the more potential work is lost.
 
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+<div className = 'info' >
+Observe that many of the statements mentioned above pertain to the entropy of the "universe." In problem-solving contexts, "the universe" basically encompasses both the system AND its surroundings.
 
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+</div>
+# Spontaneous Processes
+
+Remember the initial question posed at the start of this article: why does hot food tend to cool down over time? When a hot substance transfers heat to its relatively colder surroundings, it practically cools down. This phenomenon is a common occurrence in our daily lives, but what drives it to happen in this specific direction (from hot to cold) and not the other way around? Additionally, we notice that this cooling process occurs naturally, meaning it happens on its own without any external energy input.
+
+In thermodynamics, any process that occurs naturally in this manner is referred to as a **spontaneous process.** In the following section, we will explore the connection between entropy and spontaneous processes, providing us with an answer to our initial question!
+
+> ProTip You can disable any **Markdown extension** in the **File properties** dialog.

@@ -28,10 +28,10 @@ const BlogController = {
     posts && res.status(201).json({ results: posts });
   },
   updatePost: async (req, res) => {
-    const { id } = req.params;
+    const { slug } = req.params;
     const updatedPost = res.validatedBody;
     try {
-      await Post.findByIdAndUpdate(id, { ...updatedPost, updatedAt: Date.now() }, { new: true });
+      await Post.findOneAndUpdate({ slug }, { ...updatedPost, updatedAt: Date.now() }, { new: true });
       res.status(201).json(STATUS.CREATED);
     } catch (err) {
       res.status(404).json({ ...STATUS.NOT_FOUND, description: err.message });
