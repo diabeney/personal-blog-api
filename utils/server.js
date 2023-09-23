@@ -8,10 +8,10 @@ let PORT = process.env.PORT || 3000;
 
 const app = express();
 
-// ConnectDB(process.env.MONGO_URI);
+// ;
 
 (async function startServer(port) {
-  await ConnectDB("mongodb://127.0.0.1:27017");
+  await ConnectDB(process.env.MONGO_URI);
   const server = app.listen(port);
   server.on("listening", async () => {
     console.info("Server listening on port:", port);
