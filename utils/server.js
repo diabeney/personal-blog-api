@@ -1,31 +1,21 @@
 import express from "express";
 import { config } from "dotenv";
-import ConnectDB from "./db.js";
-
+import mongoose from "mongoose";
 config();
 
 let PORT = process.env.PORT || 3000;
 
 const app = express();
 
-// ;
+try {
+  await mongoose.connect(process.env.MONGO_URI);
+  console.log("Database connected!");
+} catch (err) {
+  console.log(err);
+}
 
-(async function startServer(port) {
-  await ConnectDB(process.env.MONGO_URI);
-  const server = app.listen(port);
-  server.on("listening", async () => {
-    console.info("Server listening on port:", port);
-  });
-  server.on("error", (err) => {
-    if (err.code === "EADDRINUSE") {
-      const newPort = port + 1;
-      console.warn(`Port ${port} already in use, trying ${newPort} instead.`);
-      setTimeout(() => {
-        PORT = process.env.PORT || newPort;
-        startServer(newPort);
-      }, 1000);
-    }
-  });
-})(PORT);
+app.listen(PORT, () => {
+  console.log("Server listening on port: ", PORT);
+});
 
 export default app;

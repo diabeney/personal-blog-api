@@ -15,6 +15,8 @@ The following is a video demo of my old site.
 
 <video src="/previous-site.mp4" autoplay loop></video>
 
+# Title goes here
+
 ## Content? Happy?
 
 <section>
