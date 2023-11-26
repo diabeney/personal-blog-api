@@ -2,7 +2,7 @@ import { remark } from "remark";
 import { readFileSync } from "fs";
 
 export const MarkdownController = {
-  getMarkdown: async (req, res) => {
+  getMarkdown: async (_, res) => {
     const filePath = res.blogPath;
     const postdata = res.foundPost;
     const fileContent = readFileSync(filePath, "utf-8");

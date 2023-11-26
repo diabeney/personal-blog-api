@@ -3,7 +3,7 @@ import { config } from "dotenv";
 import mongoose from "mongoose";
 config();
 
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 8080;
 
 const app = express();
 
